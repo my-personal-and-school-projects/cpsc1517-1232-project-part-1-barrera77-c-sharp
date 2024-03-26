@@ -26,7 +26,7 @@
 
                     <div id="menu-buttons" class="">
                         <div>
-                            <button class="btn btn-outline-primary">Show Program Courses</button>
+                            <button class="btn btn-primary">Show Program Courses</button>
                         </div>
                         <div>
                             <button class="btn btn-outline-primary">Add New ...</button>
@@ -53,7 +53,7 @@
 
                     <div id="menu-buttons" class="col-4">
                         <div>
-                            <button class="btn btn-outline-primary" @onclick="HandleSelectedProgram">Show Program Courses</button>
+                            <button class="btn btn-primary" @onclick="HandleSelectedProgram">Show Program Courses</button>
                         </div>
                         <div>
                             <button class="btn btn-outline-primary">Add New ...</button>
@@ -83,23 +83,27 @@
                         @foreach (var pc in ProgramCourses)
                         {
                             <tr>
-                                <td>Edit</td>
-                                <td>@pc.CourseId</td>
+                                <td class="text-center"><a href="/crud">Edit</a></td>
+                                <td class="text-center">@pc.CourseId</td>
                                 <td>@pc.Course.CourseName</td>
-                                <td>@(pc.Required ? "Yes" : "No")</td>
-                                <td>@pc.SectionLimit</td>
-                                <td>@pc.Course.Credits</td>
+                                <td class="text-center">@(pc.Required ? "Yes" : "No")</td>
+                                <td class="text-center">@pc.SectionLimit</td>
+                                <td class="text-center">@pc.Course.Credits</td>
                             </tr>
                         }
                     </tbody>
                 }
                 else
                 {
-                    <tr id="table-alert" class="alert alert-warning">
-                        <td colspan="12">
-                            <p class="text-center m-auto"><strong>Sorry, no courses found</strong></p>
-                        </td>
-                    </tr>
+                    if (ProgramId != 0)
+                    {
+                        <tr id="table-alert" class="alert alert-warning">
+                            <td colspan="12">
+                                <p class="text-center m-auto"><strong>Sorry, no courses found</strong></p>
+                            </td>
+                        </tr>
+                    }
+                  
                 }
                
             </table>

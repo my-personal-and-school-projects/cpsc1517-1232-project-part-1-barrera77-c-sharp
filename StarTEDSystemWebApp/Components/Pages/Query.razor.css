@@ -10,12 +10,17 @@ h3 {
 thead {
     position: sticky;
     top: 0;
+    z-index: 1;
     background-color: black;
     color: white;
 }
 
+th {
+    text-align: center;
+}
+
 .container {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 5rem;
 }
 
@@ -54,8 +59,7 @@ thead {
 }
 
 #program-courses-display {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 @media (max-width: 1200px) {
