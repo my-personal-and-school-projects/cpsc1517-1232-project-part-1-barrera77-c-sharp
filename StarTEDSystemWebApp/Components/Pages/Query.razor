@@ -1,0 +1,58 @@
+﻿@page "/query"
+
+<h3>Query</h3>
+
+
+
+
+
+
+
+@* Display Data *@
+
+<div class="container border py-3">
+    <section>
+        <fieldset>
+          <div id="main-menu">
+                <div id="menu">
+                    <div id="menu-program-courses">
+                        <label class="" for="Program-info">Program:</label>
+                        <select class="form-select col-10" id="Program-info">
+                            <option selected value="0">Select a program</option>
+                        </select>
+                    </div>
+              </div>
+                
+
+                <div id="menu-buttons" class="">
+                    <div>
+                        <button class="btn btn-outline-primary">Show Program Courses</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline-primary">Add New ...</button>
+                    </div>
+                </div>
+
+          </div>
+        </fieldset>
+    </section>
+    <section id="program-courses-display">
+        <div id="table-wrapper">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Course Number</th>
+                        <th>Course Name</th>
+                        <th>Required</th>
+                        <th>Section Limit</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </section>
+
+
+</div>
+

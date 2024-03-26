@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarTEDSystemDB", "StarTEDSystemDB\StarTEDSystemDB.csproj", "{D75DEF6E-536B-49DD-865B-5B70F4401A97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarTEDSystemWebApp", "StarTEDSystemWebApp\StarTEDSystemWebApp.csproj", "{9F727E63-F91E-4708-BF3F-A3E6FFC2CD96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarTEDSystemWebApp", "StarTEDSystemWebApp\StarTEDSystemWebApp.csproj", "{9F727E63-F91E-4708-BF3F-A3E6FFC2CD96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

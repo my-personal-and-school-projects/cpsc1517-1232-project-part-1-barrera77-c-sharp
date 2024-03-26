@@ -94,3 +94,17 @@ main {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+
+.disclaimer {
+    margin-top: -3.5rem;
+    max-width: 100%;    
+}
+
+/*TODO: center footer properly*/
+
+    .disclaimer p {
+        font-size: 12px;
+        max-width: 50%;
+        margin: auto;
+    }
