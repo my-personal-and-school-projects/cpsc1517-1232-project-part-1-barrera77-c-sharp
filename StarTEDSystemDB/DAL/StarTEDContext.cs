@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace StarTEDSystemDB.DAL;
 
-public partial class StarTEDContext : DbContext
+internal partial class StarTEDContext : DbContext
 {
     //public StarTEDContext()
     //{

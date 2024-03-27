@@ -1,12 +1,7 @@
 ﻿@page "/query/{ProgramId:int?}"
 
-<h3>Query</h3>
-
-
-
-
-
-
+<PageTitle>Query - StarTED</PageTitle>
+<h3>Query - StarTED</h3>
 
 
 
@@ -59,9 +54,9 @@
                             <button class="btn btn-outline-primary">Add New ...</button>
                         </div>
                     </div>
-                }
-                
-          </div>
+                }                
+          </div>         
+          
         </fieldset>
     </section>
     <section id="program-courses-display">
@@ -103,7 +98,15 @@
                             </td>
                         </tr>
                     }
-                  
+                    else
+                    {
+                        <tr id="table-alert" class="alert alert-warning">
+                            <td colspan="12">
+                                <p class="text-center m-auto"><strong>Please select a program to see the courses</strong></p>
+                            </td>
+                        </tr>
+                    }
+
                 }
                
             </table>
