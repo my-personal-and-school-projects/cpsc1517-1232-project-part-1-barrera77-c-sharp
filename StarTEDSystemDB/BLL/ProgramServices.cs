@@ -24,7 +24,9 @@ namespace StarTEDSystemDB.BLL
         /// <returns></returns>
         public List<Program> GetAllPrograms()
         {
-            return _context.Programs.ToList<Program>();
+            return _context.Programs
+                .OrderBy(p => p.ProgramName)
+                .ToList<Program>();
         }
     }
 }
